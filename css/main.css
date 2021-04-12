@@ -1,0 +1,19 @@
+:root {
+  --background-white: #FFFFFF;
+  --background-gray: #707070;
+  --background-light: #00000029;
+  --text-color: #888888;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
