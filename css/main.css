@@ -1,8 +1,10 @@
+/* default settings */
+
 :root {
-  --background-white: #FFFFFF;
+  --white: #FFFFFF;
   --background-gray: #707070;
-  --background-light: #00000029;
-  --text-color: #888888;
+  --opacity-light: #00000029;
+  --text-gray: #888888;
 }
 
 * {
@@ -12,8 +14,26 @@
   text-decoration: none;
 }
 
+/* default selectors */
+
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
+}
+
+header {
+  background-color: var(--background-gray);
+  color: var(--white);
+}
+
+footer {
+  background-color: var(--background-gray);
+  color: var(--white);
+}
+
+/* utilitary classes */
+
+.text-center {
+  text-align: center;
 }
