@@ -43,17 +43,16 @@ body {
   background-color: var(--white);
   transform: skew(0deg, 5deg);
   clear: both;
+  margin-top: 5%;
 }
 
 .form-group {
-  margin: 0 50px;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  width: 280px;
-  margin: 24px 0;
+  margin-bottom: 24px;
 }
 
 .input-control {
@@ -71,20 +70,24 @@ label {
   margin-bottom: 12px;
 }
 
-.title-lead::before,
-.title-lead::after {
-	content: "";
-	display: inline-block;
-	width: 300px;
-	height: 3px;
-	background: var(--text-gray);
-  margin: 7.4px 15px;
+.title-lead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-lead::after,
+.title-lead::before {
+  content: '';
+  flex: 1;
+  border: 1px solid var(--text-gray);
 }
 
 .products-container {
   background-color: var(--white);
   transform: skew(0deg, -5deg);
   clear: both;
+  margin-top: 5%;
 }
 
 .text-group, .form-group {
@@ -92,12 +95,10 @@ label {
 }
 
 .text-group {
-  padding: 56px 28px 56px 112px;
   color: var(--text-gray);
 }
 
 .form-group {
-  padding: 42px 28px 28px 14px;
   color: var(--text-gray);
 }
 
@@ -155,5 +156,5 @@ label {
 
 .footer-fix {
   transform: skew(0deg, 5deg);
+  padding-top: 50px;
 }
-
