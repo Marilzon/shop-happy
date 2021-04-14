@@ -26,6 +26,7 @@ body {
 
 #main {
   background-color: var(--white);
+  background: linear-gradient(0deg, var(--background-gray) 10%, var(--white) 10%);
 }
 
 .header-container {
@@ -42,6 +43,32 @@ body {
   background-color: var(--white);
   transform: skew(0deg, 5deg);
   clear: both;
+}
+
+.form-group {
+  margin: 0 50px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 24px 0;
+}
+
+.input-control {
+  height: 36px;
+  border: 0.5px solid var(--background-gray);
+  border-radius: 3px;
+  color: var(--text-gray);
+}
+
+.radio-group {
+  margin: 24px 0;
+}
+
+label {
+  margin-bottom: 12px;
 }
 
 .products-container {
@@ -67,7 +94,7 @@ body {
 .footer-container {
   background-color: var(--background-gray);
   color: var(--white);
-  min-height: 293px;
+  min-height: 253px;
   margin-top: 80px;
   transform: skew(0deg, -5deg);
 }
@@ -86,7 +113,7 @@ body {
   flex-direction: column;
 }
 
-.menu-container {
+.space-evenly {
   display: flex;
   justify-content: space-evenly;
 }
@@ -118,3 +145,4 @@ body {
 .footer-fix {
   transform: skew(0deg, 5deg);
 }
+
