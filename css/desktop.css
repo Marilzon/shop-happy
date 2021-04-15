@@ -1,5 +1,4 @@
 /* default settings */
-
 :root {
   --white: #FFFFFF;
   --background-gray: #707070;
@@ -7,28 +6,27 @@
   --text-gray: #888888;
 }
 
-* {
-  padding: 0;
+html, body {
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
 
-/* default selectors */
-
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
-
   background-color: var(--background-gray);
 }
 
+label {
+  margin-bottom: 12px;
+}
+
+/* custom selectors */
+
 #main {
   background-color: var(--white);
-  /*
-  background: linear-gradient(0deg, var(--background-gray) 10%, var(--white) 10%);
-  */
 }
 
 .header-container {
@@ -44,10 +42,33 @@ body {
   background-color: var(--white);
 }
 
+.sharing-container {
+  background-color: var(--white);
+}
+
 .footer-container {
   background-color: var(--background-gray);
   color: var(--white);
+  padding: 7%;
 }
+
+.header-container,
+.about-container,
+.products-container,
+.sharing-container {
+  padding: 5%;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card-item {
+  background-color: lightblue;
+  margin: 7px;
+}
+
 
 .column {
   display: flex;
@@ -55,7 +76,18 @@ body {
   margin-bottom: 24px;
 }
 
-.input-control {
+.button-nav {
+  background-color: var(--white);
+  color:var(--text-gray);
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+  margin: 6px;
+  padding: 14px;
+  min-width: 160px;
+}
+
+.button-control {
   height: 36px;
   border: 0.5px solid var(--background-gray);
   border-radius: 3px;
@@ -66,16 +98,12 @@ body {
   margin: 24px 0;
 }
 
-label {
-  margin-bottom: 12px;
-}
 
 .title-lead {
   display: flex;
   align-items: center;
   text-align: center;
   color: var(--background-gray);
-  width: 89vw;
 }
 
 .title-lead::before,
@@ -84,7 +112,6 @@ label {
   flex: 1;
   border-bottom: 1px solid #000;
 }
-
 .title-lead:not(:empty)::before {
   margin-right: .25em;
 }
@@ -96,17 +123,6 @@ label {
 .text-group,
 .form-group {
   color: var(--text-gray);
-}
-
-.button {
-  background-color: var(--white);
-  color:var(--text-gray);
-  border-radius: 3px;
-  text-decoration: none;
-  text-align: center;
-  margin: 6px;
-  padding: 14px;
-  min-width: 160px;
 }
 
 /* utilitary classes */
@@ -126,4 +142,12 @@ label {
 .space-evenly {
   display: flex;
   justify-content: space-evenly;
+}
+
+.low-text-padding {
+  margin: 3.5px;
+}
+
+.container {
+  padding: 5%;;
 }
