@@ -19,6 +19,7 @@ const getAPI = (url) => {
             <small>de R$${data.products[i].oldPrice.toFixed(2)}</small>
             <p><strong>Por R$${data.products[i].price.toFixed(2)}</strong></p>
             <small>ou ${data.products[i].installments.count} x de R$${data.products[i].installments.value.toFixed(2)}</small>
+            <button class="button-control">Comprar</button>
             </figure>
           </div>
         `

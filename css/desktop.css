@@ -27,6 +27,11 @@ small {
   display: block;
 }
 
+button:hover {
+  cursor: pointer;
+  background-color: var(--opacity-light);
+}
+
 /* custom selectors */
 
 #main {
@@ -86,6 +91,11 @@ small {
   flex-direction: column;
   margin: 7px;
   color: var(--background-gray);
+  border: 1px solid transparent;
+}
+
+.card-item:hover {
+  border: 1px solid var(--opacity-light);
 }
 
 .column {
