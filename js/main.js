@@ -1,14 +1,15 @@
 const rootProducts = document.querySelector("#root-products");
+const showMoreProducts = document.querySelector("#show-more-products");
 
 const getAPI = (url) => {
   fetch(url)
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    for (i = 0;i < data.products.length; i++) {
-      rootProducts.insertAdjacentHTML('beforeend',
-        `
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      for (i = 0; i < data.products.length; i++) {
+        rootProducts.insertAdjacentHTML('beforeend',
+          `
           <div class="card-item">
             <figure>
             <img src="${data.products[i].image}" alt="Product image">
@@ -23,10 +24,15 @@ const getAPI = (url) => {
             </figure>
           </div>
         `
-      );
-      console.log(data.products[i].name);
-    }
-  })
+        );
+      }
+    })
 }
 
 getAPI("https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1");
+
+showMoreProducts.onclick = function () {
+  getAPI("https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=2");
+  showMoreProducts.disabled = true;
+  showMoreProducts.style.cursor = "not-allowed";
+}
