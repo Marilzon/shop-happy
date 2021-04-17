@@ -41,12 +41,23 @@ button:hover {
 .header-container {
   background-color: var(--background-gray);
   color: var(--white);
+  position: relative;
+  margin-bottom: 100px;
 }
 
 .about-container {
   background-color: var(--white);
+  position: relative;
   display: flex;
   flex-direction: row;
+}
+
+.about-container::before {
+  content: '';
+  position: absolute;
+  border-bottom: 100px solid var(--white);
+  border-right: 100vw solid transparent;
+  top: -100px;
 }
 
 .products-container {
@@ -71,11 +82,20 @@ button:hover {
 .footer-container {
   background-color: var(--background-gray);
   color: var(--white);
-  padding: 7%;
+  padding: 3%;
+  position: relative;
 }
 
+.footer-container::before {
+  content: '';
+  position: absolute;
+  border-bottom: 100px solid var(--background-gray);
+  border-left: 100vw solid transparent;
+  top: -100px;
+}
+
+
 .header-container,
-.about-container,
 .products-container,
 .sharing-container {
   padding: 24px;
@@ -181,6 +201,10 @@ button:hover {
 .text-group,
 .form-group {
   color: var(--text-gray);
+}
+
+.share-form {
+  margin-bottom: 80px;
 }
 
 /* utilitary classes */
