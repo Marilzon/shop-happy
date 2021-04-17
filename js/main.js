@@ -16,8 +16,8 @@ const getAPI = (url) => {
             <p>
               ${data.products[i].description}
             </p>
-            <smal>de R$${data.products[i].oldPrice.toFixed(2)}</smal>
-            <p>Por R$${data.products[i].price.toFixed(2)}</p>
+            <small>de R$${data.products[i].oldPrice.toFixed(2)}</small>
+            <p><strong>Por R$${data.products[i].price.toFixed(2)}</strong></p>
             <small>ou ${data.products[i].installments.count} x de R$${data.products[i].installments.value.toFixed(2)}</small>
             </figure>
           </div>
@@ -29,20 +29,3 @@ const getAPI = (url) => {
 }
 
 getAPI("https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1");
-
-/*
-const productInterface = `
-  <div class="card-item">
-    <figure>
-      <img src="#" alt="Product image">
-      <figcaption>${data.products[i].name}</figcaption>
-      <p>
-        ${data.products[i].description}
-      </p>
-      <smal>de R$${data.products[i].oldPrice.toFixed(2)}</smal>
-      <p>Por R$${data.products[i].price.toFixed(2)}</p>
-      <small>ou ${data.products[i].installments.count} x de R$${data.products[i].installments.valuetoFixed(2)}</small>
-    </figure>
-  </div>
-`;
-*/

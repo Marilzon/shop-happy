@@ -31,7 +31,7 @@
     </header>
 
     <section class="about-container">
-      <div class="text-group">
+      <div class="text-group col-6">
         <h1>Ajude o algorítimo a ser mais certeiro</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus nec mi porta
@@ -47,38 +47,39 @@
           velit ut, ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam. Morbi viverra,
           magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel metus.
         </p>
+      </div>
 
-        <form class="form-group">
-          <div class="column">
-            <label for="name">Seu nome:</label>
-            <input class="input-control" name="name" type="text">
-          </div>
+      <form class="form-group col-6">
+        <div class="column">
+          <label for="name">Seu nome:</label>
+          <input class="input-control" name="name" type="text">
+        </div>
 
-          <div class="column">
-            <label for="email">E-mail:</label>
-            <input class="input-control" name="email" type="email">
-          </div>
+        <div class="column">
+          <label for="email">E-mail:</label>
+          <input class="input-control" name="email" type="email">
+        </div>
 
-          <div class="column">
-            <label for="cpf">CPF:</label>
-            <input class="input-control" name="cpf" type="text">
-          </div>
+        <div class="column">
+          <label for="cpf">CPF:</label>
+          <input class="input-control" name="cpf" type="text">
+        </div>
 
-          <div class="radio-group">
-            <label>
-              <input type="radio" name="gender" value="masculino">
-              Masculino
-            </label>
-            <label>
-              <input type="radio" name="gender" value="feminino">
-              Feminino
-            </label>
-          </div>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="gender" value="masculino">
+            Masculino
+          </label>
+          <label>
+            <input type="radio" name="gender" value="feminino">
+            Feminino
+          </label>
+        </div>
 
-          <div class="column">
-            <button class="input-control" type="submit">Enviar</button>
-          </div>
-        </form>
+        <div class="column">
+          <button class="input-control">Enviar</button>
+        </div>
+      </form>
     </section>
 
     <section class="products-container">
@@ -90,26 +91,31 @@
 
       </div>
 
-      <button class="button-control" type="submit">Ainda mais produtos aqui!</button>
+      <div class="text-center">
+        <button class="button-control-lead text-center" >
+          Ainda mais produtos aqui!
+        </button>
+      </div>
 
     </section>
 
     <section class="sharing-container">
       <h1 class="title-lead">Compartilhe a novidade</h1>
 
-      <div class="column">
-        <label for="friend-name">Nome do seu amigo:</label>
-        <input class="input-control" name="friend-name" type="text">
+      <div class="row">
+        <div class="column col-6">
+          <label for="friend-name">Nome do seu amigo:</label>
+          <input class="input-control" name="friend-name" type="text">
+        </div>
+
+        <div class="column col-6">
+          <label for="friend-email">E-mail:</label>
+          <input class="input-control" name="friend-email" type="text">
+        </div>
       </div>
 
-      <div class="column">
-        <label for="friend-email">E-mail:</label>
-        <input class="input-control" name="friend-email" type="text">
-      </div>
-
-
-      <div class="column">
-        <button class="input-control" type="submit">Enviar</button>
+      <div class="text-center">
+        <button class="button-control-lead">Enviar agora</button>
       </div>
 
     </section>

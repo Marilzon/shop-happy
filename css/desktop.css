@@ -23,6 +23,10 @@ label {
   margin-bottom: 12px;
 }
 
+small {
+  display: block;
+}
+
 /* custom selectors */
 
 #main {
@@ -36,14 +40,27 @@ label {
 
 .about-container {
   background-color: var(--white);
+  display: flex;
+  flex-direction: row;
 }
 
 .products-container {
   background-color: var(--white);
 }
 
+.price-container {
+  margin-top: 7px;
+}
+
+.price-container p {
+  margin: 7px auto;
+  color: var(--text-gray);
+}
+
 .sharing-container {
   background-color: var(--white);
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-container {
@@ -56,7 +73,7 @@ label {
 .about-container,
 .products-container,
 .sharing-container {
-  padding: 5%;
+  padding: 24px;
 }
 
 .card-container {
@@ -65,15 +82,16 @@ label {
 }
 
 .card-item {
-  background-color: #add8e6;
+  display: flex;
+  flex-direction: column;
   margin: 7px;
+  color: var(--background-gray);
 }
-
 
 .column {
   display: flex;
   flex-direction: column;
-  margin-bottom: 24px;
+  margin: 0 24px 24px 24px;
 }
 
 .button-nav {
@@ -88,6 +106,27 @@ label {
 }
 
 .button-control {
+  background-color: var(--white);
+  height: 36px;
+  border: 0.5px solid var(--background-gray);
+  border-radius: 3px;
+  color: var(--text-gray);
+  width: 100%;
+  margin: 7px 0;
+}
+
+.button-control-lead {
+  background-color: var(--white);
+  height: 36px;
+  border: 0.5px solid var(--background-gray);
+  border-radius: 3px;
+  color: var(--text-gray);
+  min-width: 420px;
+  margin: 24px 0;
+}
+
+.input-control {
+  background-color: var(--white);
   height: 36px;
   border: 0.5px solid var(--background-gray);
   border-radius: 3px;
@@ -95,9 +134,9 @@ label {
 }
 
 .radio-group {
-  margin: 24px 0;
+  margin: 24px;
+  text-align: center;
 }
-
 
 .title-lead {
   display: flex;
@@ -120,12 +159,29 @@ label {
   margin-left: .25em;
 }
 
+.text-group h1 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.form-group {
+  padding: 0 5%;
+}
+
 .text-group,
 .form-group {
   color: var(--text-gray);
 }
 
 /* utilitary classes */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col-6 {
+  width: 50%;
+}
 
 .text-center {
   text-align: center;
