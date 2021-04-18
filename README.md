@@ -26,19 +26,21 @@
 - JavaScript.
 
 ### Padrões chave de COMMITS:
-- Update: Codificação, refatoração e edição de codigo já existente.
+- Update: Criação, refatoração ou edição de codigo já existente.
 - Feature: Código com nova função dentro do projeto ou ferramenta nova.
-- Delete: Removendo parte do codigo, ou arquivos.
+- Delete: Removendo parte do codigo e/ ou arquivos.
 
- ### Linha do tempo de criação
+### Linha do tempo de criação
 
-* Branch MAIN
+## Branch MAIN
  - 1º Fase:
   Iniciei a montagem da estruturas de marcaçoes, focando em manter a maior semantica dentro do escopo do projeto, e definindo os padroes de pastas e conectando JS e CSS com o HTML.
  - 2º Fase:
   Testando o algumas formas de replicar o Background proposto no MOCK, acabei conseguindo de certa forma, mas acabei tendo dificuldades com CSS e excesso de codigo, acabei apagando e deixando apenas regras CSS *HOVER*.
+ - 3º Fase:
+  Criando e deixando o icone do accordion funcional, para esconder e exibir texto, dentro do media query para mobiles.
 
-* Branch API
+## Branch API
  - 1º Fase:
  Apos o as marcaçoes e estilizacoes iniciais, começa a jornada para manipular DOM e consumir o API, testei varias formas, acessei videos e tutorials para definir a melhor maneira para implementar.
 
@@ -48,7 +50,7 @@ Foi criado uma manipulação que acessa o ID da div que quero enviar os dados da
 - 3º Fase:
 Consegui com base em conhecimento anteriores de projetos meus, criar uma funcão que acessa a api pela URL, para manipular a paginação ela foi muito efetiva e conseguiu resolver minha dificuldade.
 
-* Branch CSS
+## Branch CSS
 - 1º Fase:
 Definindo variaveis de cores CSS e padrões de margin e padding.
 
