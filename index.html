@@ -8,6 +8,7 @@
 
   <script defer src="js/main.js"></script>
   <link rel="stylesheet" href="css/desktop.css">
+  <link rel="stylesheet" href="css/mobile.css">
 
   <title>Shop Happy</title>
 </head>
@@ -22,17 +23,21 @@
         <p>Todos os produtos desta lista foram selecionados a partir da sua navecação, Aproveite!</p>
       </div>
 
-      <nav class="space-evenly">
-        <a class="button-nav" href="#about-container">Conheça a Linx</a>
-        <a class="button-nav" href="#">Ajude o algoritimo</a>
-        <a class="button-nav" href="#products-container">Seus produtos</a>
-        <a class="button-nav" href="#sharing-container">Compartilhe</a>
+      <nav class="menu-nav">
+        <a class="button-nav flex-center" href="#about-container">Conheça a Linx</a>
+        <a class="button-nav flex-center" href="#">Ajude o algoritimo</a>
+        <a class="button-nav flex-center" href="#products-container">Seus produtos</a>
+        <a class="button-nav flex-center" href="#sharing-container">Compartilhe</a>
       </nav>
     </header>
 
     <section class="about-container" id="about-container">
-      <div class="text-group col-6">
-        <h1>Ajude o algorítimo a ser mais certeiro</h1>
+      <div class="text-group col-responsible">
+        <h1>
+          <strong>
+            Ajude o algorítimo a ser mais certeiro
+          </strong>
+        </h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus nec mi porta
           convallis
@@ -49,7 +54,7 @@
         </p>
       </div>
 
-      <form class="form-group col-6">
+      <form class="form-group col-responsible">
         <div class="column">
           <label for="name">Seu nome:</label>
           <input class="input-control" name="name" type="text" required>
@@ -102,14 +107,16 @@
     <section class="sharing-container" id="sharing-container">
       <h1 class="title-lead">Compartilhe a novidade</h1>
 
+      <p class="text-center">Quer que seus amigos também ganhem alista personalizada deles? preencha agora!</p>
+
       <form class="share-form">
         <div class="row">
-          <div class="column col-6">
+          <div class="column col-responsible">
             <label for="friend-name">Nome do seu amigo:</label>
             <input class="input-control" name="friend-name" type="text" required>
           </div>
 
-          <div class="column col-6">
+          <div class="column col-responsible">
             <label for="friend-email">E-mail:</label>
             <input class="input-control" name="friend-email" type="email" required>
           </div>

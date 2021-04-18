@@ -50,6 +50,7 @@ button:hover {
   position: relative;
   display: flex;
   flex-direction: row;
+  color: var(--text-gray);
 }
 
 .about-container::before {
@@ -62,6 +63,7 @@ button:hover {
 
 .products-container {
   background-color: var(--white);
+  color: var(--text-gray);
 }
 
 .price-container {
@@ -70,13 +72,13 @@ button:hover {
 
 .price-container p {
   margin: 7px auto;
-  color: var(--text-gray);
 }
 
 .sharing-container {
   background-color: var(--white);
   display: flex;
   flex-direction: column;
+  color: var(--text-gray);
 }
 
 .footer-container {
@@ -94,7 +96,6 @@ button:hover {
   top: -100px;
 }
 
-
 .header-container,
 .products-container,
 .sharing-container {
@@ -110,7 +111,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   margin: 7px;
-  color: var(--background-gray);
   border: 1px solid transparent;
 }
 
@@ -129,10 +129,9 @@ button:hover {
   color:var(--text-gray);
   border-radius: 3px;
   text-decoration: none;
-  text-align: center;
   margin: 6px;
-  padding: 14px;
-  min-width: 160px;
+  height: 48px;
+  padding: 0 3%;
 }
 
 .button-control {
@@ -161,6 +160,7 @@ button:hover {
   border: 0.5px solid var(--background-gray);
   border-radius: 3px;
   color: var(--text-gray);
+  padding-left: 7px;
 }
 
 .radio-group {
@@ -172,7 +172,7 @@ button:hover {
   display: flex;
   align-items: center;
   text-align: center;
-  color: var(--background-gray);
+  padding: 0 3%;
 }
 
 .title-lead::before,
@@ -181,6 +181,7 @@ button:hover {
   flex: 1;
   border-bottom: 1px solid #000;
 }
+
 .title-lead:not(:empty)::before {
   margin-right: .25em;
 }
@@ -194,17 +195,13 @@ button:hover {
   padding-top: 0;
 }
 
+.text-group,
 .form-group {
   padding: 0 5%;
 }
 
-.text-group,
-.form-group {
-  color: var(--text-gray);
-}
-
 .share-form {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 /* utilitary classes */
@@ -213,7 +210,7 @@ button:hover {
   flex-direction: row;
 }
 
-.col-6 {
+.col-responsible {
   width: 50%;
 }
 
@@ -229,15 +226,11 @@ button:hover {
   flex-direction: column;
 }
 
-.space-evenly {
+.menu-nav {
   display: flex;
   justify-content: space-evenly;
 }
 
 .low-text-padding {
   margin: 3.5px;
-}
-
-.container {
-  padding: 5%;;
 }

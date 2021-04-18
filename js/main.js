@@ -11,16 +11,21 @@ const getAPI = (url) => {
         rootProducts.insertAdjacentHTML('beforeend',
           `
           <div class="card-item">
-            <figure>
-            <img src="${data.products[i].image}" alt="Product image">
-            <figcaption>${data.products[i].name}</figcaption>
-            <p>
-              ${data.products[i].description}
-            </p>
-            <small>de R$${data.products[i].oldPrice.toFixed(2)}</small>
-            <p><strong>Por R$${data.products[i].price.toFixed(2)}</strong></p>
-            <small>ou ${data.products[i].installments.count} x de R$${data.products[i].installments.value.toFixed(2)}</small>
-            <button class="button-control">Comprar</button>
+            <figure class="figure-container">
+              <div class="photo-product">
+                <img src="${data.products[i].image}" alt="Product image">
+              </div>
+
+              <div class="content-product">
+                <figcaption>${data.products[i].name}</figcaption>
+                <p class="item-description">
+                  ${data.products[i].description}
+                </p>
+                <small>de R$${data.products[i].oldPrice.toFixed(2)}</small>
+                <p><strong>Por R$${data.products[i].price.toFixed(2)}</strong></p>
+                <small>ou ${data.products[i].installments.count} x de R$${data.products[i].installments.value.toFixed(2)}</small>
+                <button class="button-control">Comprar</button>
+              </div>
             </figure>
           </div>
         `
