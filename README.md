@@ -1,7 +1,7 @@
 # Shop Happy
 
 ## Landing Page criada com base no desafio para Vaga de Estagio Front-End da Linx Impulse
- - Page: [Shop Happy] (https://marilzon.github.io/shop-happy/)
+ - GITHUB-Page: Shop Happy (https://marilzon.github.io/shop-happy/)
 
 ## Como executar
 
@@ -18,15 +18,26 @@
 
 ## Sobre desenvolvimento do projeto
 
-### Projeto contem as Stacks *HTML5*, *CSS3(FlexBox e Grid)* e JavaScript.
+### Projeto contem as Stacks>
 
-** Branch MAIN
+ - *HTML5*
+ - *CSS3(FlexBox e Grid)
+ - JavaScript.
+
+ Padrões de COMMITS:
+ - Update: Codificação, refatoração e edição de codigo ja existente.
+ - Feature: Código com nova função dentro do projeto ou ferramenta nova.
+ - Delete: Removendo parte do codigo, ou arquivos.
+
+ ### Linha do tempo de criação
+
+* Branch MAIN
  - 1º Fase:
   Iniciei a montagem da estruturas de marcaçoes, focando em manter a maior semantica dentro do escopo do projeto, e definindo os padroes de pastas e conectando JS e CSS com o HTML
  - 2º Fase:
   Testando o algumas formas de replicar o Background proposto no MOCK, acabei conseguindo de certa forma, mas acabei tendo dificuldades com CSS e excesso de codigo, acabei apagando e deixando apenas regras de HOVER
 
-** Branch API
+* Branch API
  - 1º Fase:
  Apos o as marcaçoes e estilizacoes iniciais, começa a jornada para manipular DOM e consumir o API, testei varias formas, acessei videos e tutorials para definir a melhor maneira para implementar.
 
@@ -36,7 +47,7 @@ Foi criado uma manipulação que acessa o ID da div que quero enviar os dados da
 - 3º Fase:
 Consegui com base em conhecimento anteriores de projetos meus, criar uma funcão que acessa a api pela URL, para manipular a paginação ela foi muito efetiva e conseguiu resolver minha dificuldade.
 
-** Branch CSS
+* Branch CSS
 - 1º Fase:
 Definindo variaveis de cores CSS e padrões de margin e padding.
 
@@ -46,6 +57,12 @@ Após ter sucesso com a API, volto a parte do CSS que considerava bastante desaf
 - 4º Fase:
 Criação do arquivo *mobile.css* arquivo que contem regras de CSS para seguir o padrão de layout em dispositivos moveis
 
+*Fiquem a vontade para conferir todo projeto*
+
+```
+Atenciosamente: Marilzon de Sousa
+Desenvolvedor Front End Iniciante
+```
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
