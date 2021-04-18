@@ -26,9 +26,9 @@
  - JavaScript.
 
  - Padrões chave de COMMITS:
- - Update: Codificação, refatoração e edição de codigo já existente.
- - Feature: Código com nova função dentro do projeto ou ferramenta nova.
- - Delete: Removendo parte do codigo, ou arquivos.
+  - Update: Codificação, refatoração e edição de codigo já existente.
+  - Feature: Código com nova função dentro do projeto ou ferramenta nova.
+  - Delete: Removendo parte do codigo, ou arquivos.
 
  ### Linha do tempo de criação
 
