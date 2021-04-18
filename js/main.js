@@ -1,5 +1,7 @@
 const rootProducts = document.querySelector("#root-products");
 const showMoreProducts = document.querySelector("#show-more-products");
+const accordion = document.querySelector("#accordion");
+const textAccordion = document.querySelector("#text-accordion");
 
 const getAPI = (url) => {
   fetch(url)
@@ -40,4 +42,9 @@ showMoreProducts.onclick = function () {
   getAPI("https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=2");
   showMoreProducts.disabled = true;
   showMoreProducts.style.cursor = "not-allowed";
+}
+
+accordion.onclick = function () {
+  textAccordion.classList.toggle("hidden");
+  accordion.classList.toggle("rotate")
 }

@@ -1,4 +1,4 @@
-/* default settings */
+/* default html selectors settings */
 :root {
   --white: #FFFFFF;
   --background-gray: #707070;
@@ -64,6 +64,10 @@ button:hover {
 .products-container {
   background-color: var(--white);
   color: var(--text-gray);
+}
+
+#accordion {
+  display: none;
 }
 
 .price-container {
@@ -205,6 +209,7 @@ button:hover {
 }
 
 /* utilitary classes */
+
 .row {
   display: flex;
   flex-direction: row;
@@ -234,3 +239,4 @@ button:hover {
 .low-text-padding {
   margin: 3.5px;
 }
+

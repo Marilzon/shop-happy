@@ -1,8 +1,18 @@
 @media only screen and (max-width: 600px) {
+  /* default html selectors settings */
+  i {
+    transition: all 0.5s ease-in-out;
+  }
+
+  /* custom selectors */
   .about-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  #accordion {
+    display: block;
   }
 
   .card-container {
@@ -15,22 +25,12 @@
     margin-right: 7px;
   }
 
-  .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .item-description {
     display: none;
   }
 
   .button-control-lead {
     min-width: 80%;
-  }
-
-  .col-responsible {
-    width: 80%;
   }
 
   .button-nav {
@@ -51,5 +51,33 @@
     display: grid;
     grid-template-columns: 2fr 2fr;
     margin: 0 5%;
+  }
+
+  /* utilitary classes */
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .space-between {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .col-responsible {
+    width: 80%;
+  }
+
+  .rotate {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .hidden {
+    display: none;
+    transition: all 0.3s ease-in-out;
   }
 }
